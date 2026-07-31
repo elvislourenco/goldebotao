@@ -181,6 +181,7 @@ select,input[type=range]{background:var(--panel2);color:var(--ink);border:1px so
 .slogan{color:var(--ink-dim);letter-spacing:.04em;font-size:13px;margin-top:10px}
 #introCanvas{width:100%;max-width:360px;height:auto;display:block;margin:14px auto;border-radius:14px;border:1px solid var(--line);background:#0a2e1e}
 .fake{margin-top:10px;font-size:11px;color:var(--ink-dim);border:1px dashed var(--line);border-radius:999px;padding:6px 12px;display:inline-block}
+.credit{margin-top:16px;font-size:11px;color:var(--ink-dim);opacity:.8;letter-spacing:.04em}
 </style>
 </head>
 <body>
@@ -430,6 +431,7 @@ select,input[type=range]{background:var(--panel2);color:var(--ink);border:1px so
       <button id="sPay">Tabela de pagamentos</button>
       <button id="sResp">Jogo responsável</button>
     </div>
+    <div class="credit">Criado por Elvis Lourenço</div>
   </div>
 </div>
 
@@ -777,12 +779,12 @@ const G = {
      à referência física (botão 45mm, bola 10mm, gol 12,5x5, goleiro 80x35mm),
      preservando as proporções entre eles. A mesa mantém o tamanho, então as
      áreas foram reenquadradas para continuar emoldurando o gol ampliado.
-     A bola recebe um ganho extra de 2x sobre essa escala, por legibilidade. */
+     A bola recebe um ganho extra de ~1,33x sobre essa escala, por legibilidade. */
   FW:104, FL:167,
   CX:52,
   GOAL_W:25, GOAL_D:10,
   POST_R:1.1,
-  BTN_R:4.5, BALL_R:2.0,          // bola 2x maior que a escala das peças
+  BTN_R:4.5, BALL_R:1.33,         // bola ~1,33x maior que a escala das peças
   KEEP_HW:6.4, KEEP_HH:3.5,       // 128mm x 70mm — 20% mais estreito, abre ângulo p/ a bola
   BIG_W:88, BIG_D:34,             // grande área
   SML_W:48, SML_D:15,             // pequena área
